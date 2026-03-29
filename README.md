@@ -1,7 +1,7 @@
 # 🏥  Hospital Clinical Resource & Readmission Analysis
 
 
-📌 Overview
+## 📌 Overview
 
 This project is an end-to-end healthcare analytics pipeline designed to identify the drivers of patient readmission risk and hospital resource utilization.
 
@@ -9,7 +9,7 @@ Using over 95,000 inpatient records, the analysis focuses on how diagnostic comp
 
 The goal is to move beyond static reporting and build a reproducible analytics system that mirrors real-world data workflows.
 
-📊 Dataset
+## 📊 Dataset
 
 Source: UCI Machine Learning Repository
 Dataset: Diabetes 130-Hospital Dataset
@@ -26,7 +26,7 @@ num_medications
 number_diagnoses
 insulin dosage changes
 
-🎯 Business Problem
+## 🎯 Business Problem
 
 Healthcare systems often operate in data silos, making it difficult to:
 
@@ -40,31 +40,31 @@ Clinical severity vs resource utilization
 Readmission risk segmentation
 Operational inefficiencies in treatment patterns
 
-🔄 End-to-End Pipeline
+## 🔄 End-to-End Pipeline
 
 Raw Data → Data Cleaning → Feature Engineering → Validation → PostgreSQL → Power BI Dashboard
 
 ⚙️ How to Run This Project
-1. Clone Repository
+## 1. Clone Repository
 
 git clone <https://github.com/pranavkuhikar/hospital-readmission-analytics>
 cd hospital-readmission-analytics
 
-2. Setup Environment
+## 2. Setup Environment
 
 conda env create -f tf_10.yml
 conda activate environment
 
-3. Run Data Pipeline
+## 3. Run Data Pipeline
 
 python src/run_pipeline.py
 
-4. Output Generated
+## 4. Output Generated
 
 data/processed/clean_data.csv
 data/processed/featured_data.csv
 
-5. Load into PostgreSQL
+## 5. Load into PostgreSQL
 
 CREATE DATABASE hospital_analysis;
 \c hospital_analysis;
@@ -82,7 +82,7 @@ FROM 'path_to_featured_data.csv'
 DELIMITER ','
 CSV HEADER;
 
-6. Power BI Dashboard
+## 6. Power BI Dashboard
 
 Open:
 powerbi/Hospital_Visualisation.pbix
@@ -99,7 +99,7 @@ Data Engineering (Python / Pandas):
 - total_visits
 
 
-🗄️ Database (PostgreSQL)
+## 🗄️ Database (PostgreSQL)
 - Designed structured schema for admissions data
 - Centralized fragmented clinical records into a single source of truth
 - Performed analytical queries using:
@@ -111,7 +111,7 @@ Data Engineering (Python / Pandas):
 5) PARTITION BY
 6) Cumulative metrics
 
-📊 Business Intelligence (Power BI)
+## 📊 Business Intelligence (Power BI)
 
 Power BI was used to build an Executive Command Center Dashboard that enables:
 
@@ -120,8 +120,6 @@ Power BI was used to build an Executive Command Center Dashboard that enables:
 - Resource utilization tracking
 - Interactive filtering across demographics
 
-
-📊 Dashboard Preview
 
 ## 📊 Dashboard Preview
 ![Dashboard](./assets/Dashboard.png)
@@ -134,11 +132,9 @@ The dashboard provides a centralized view of:
 - Age-based risk distribution
 
   
-🔍 Key Visual Insights
+## 🔍 Key Visual Insights
 
 Key findings from the analysis:
-
-## 🔍 Key Visual Insights
 
 ![Insights](./assets/Insights.png)
 
@@ -148,7 +144,7 @@ Key findings from the analysis:
 - Operational Insight: Emergency admissions significantly correlate with readmission risk
 
 
-🧩 Data Model (Power BI)
+
 ## 🧩 Data Model
 ![Model](./assets/Model.png)
 
@@ -163,7 +159,7 @@ This design enables:
 - Scalable analytical performance
 - Alignment with industry BI standards
 
-⚠️ Challenges & Solutions
+## ⚠️ Challenges & Solutions
 
 - Challenge: Inconsistent healthcare data
   Solution: Standardized missing values and cleaned dataset
@@ -177,21 +173,21 @@ This design enables:
 - Challenge: Business ambiguity
   Solution: Defined stakeholder-driven analytical questions
 
-🚀 Future Scope
+## 🚀 Future Scope
 - Add predictive modeling for readmission risk
 - Deploy real-time scoring via Streamlit
 - Automate pipeline execution
 - Extend analysis to time-series forecasting
 
   
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 - Python (Pandas, NumPy)
 - PostgreSQL
 - Power BI
 - Matplotlib / Seaborn
 - Conda
 
-📌 Final Note
+## 📌 Final Note
 
 This project demonstrates a production-style analytics pipeline, integrating data engineering, SQL, and business intelligence to deliver actionable healthcare insights.
 
