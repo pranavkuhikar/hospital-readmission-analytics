@@ -85,7 +85,7 @@ powerbi/Hospital_Visualisation.pbix
 
 Connect to PostgreSQL or CSV and refresh.
 
-🧠 Data Engineering (Python / Pandas)
+Data Engineering (Python / Pandas)
 Standardized missing values ("?" → NaN)
 Removed low-signal columns (e.g., weight, payer_code)
 Converted age buckets into numerical midpoints
@@ -116,7 +116,7 @@ Interactive filtering across demographics
 📊 Dashboard Preview
 
 ## 📊 Dashboard Preview
-![Dashboard](./assets/dashboard.png)
+![Dashboard](./assets/Dashboard.png)
 
 The dashboard provides a centralized view of:
 
@@ -130,7 +130,7 @@ Key findings from the analysis:
 
 ## 🔍 Key Visual Insights
 
-![Insights](./assets/insights.png)
+![Insights](./assets/Insights.png)
 
 Resource Scaling: Strong linear relationship between diagnostic complexity and treatment intensity
 Risk Hotspot: Patients aged 70–80 represent the highest-risk segment
@@ -140,7 +140,7 @@ Operational Insight: Emergency admissions significantly correlate with readmissi
 
 🧩 Data Model (Power BI)
 ## 🧩 Data Model
-![Model](./assets/model.png)
+![Model](./assets/Model.png)
 
 The data model follows a Star Schema architecture:
 
