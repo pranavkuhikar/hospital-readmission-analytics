@@ -25,6 +25,7 @@ num_lab_procedures
 num_medications
 number_diagnoses
 insulin dosage changes
+
 🎯 Business Problem
 
 Healthcare systems often operate in data silos, making it difficult to:
@@ -38,6 +39,7 @@ This project addresses:
 Clinical severity vs resource utilization
 Readmission risk segmentation
 Operational inefficiencies in treatment patterns
+
 🔄 End-to-End Pipeline
 
 Raw Data → Data Cleaning → Feature Engineering → Validation → PostgreSQL → Power BI Dashboard
@@ -95,6 +97,8 @@ Created derived features:
 severity_index
 readmit_high_risk
 total_visits
+
+
 🗄️ Database (PostgreSQL)
 Designed structured schema for admissions data
 Centralized fragmented clinical records into a single source of truth
@@ -107,6 +111,7 @@ Window Functions:
 RANK()
 PARTITION BY
 cumulative metrics
+
 📊 Business Intelligence (Power BI)
 
 Power BI was used to build an Executive Command Center Dashboard that enables:
