@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+env/
+venv/
+.venv/
+ENV/
+
+# Conda
+*.conda
+*.yml.backup
+
+# Environment variables
+.env
+.env.*
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data
+data/processed/
+*.csv.backup
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# Logs
+*.log
+
+# Power BI temp/cache
+*.pbix.lock
+
+# Python packaging
+build/
+dist/
+*.egg-info/
+
+# Database (future safe)
+*.sqlite3
+
+# Misc
+*.tmp
+*.bak
+.python-version
