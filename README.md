@@ -152,6 +152,7 @@ This design enables:
 Efficient filtering across visuals
 Scalable analytical performance
 Alignment with industry BI standards
+
 ⚠️ Challenges & Solutions
 
 Challenge: Inconsistent healthcare data
@@ -167,16 +168,19 @@ Challenge: Business ambiguity
 Solution: Defined stakeholder-driven analytical questions
 
 🚀 Future Scope
-Add predictive modeling for readmission risk
-Deploy real-time scoring via Streamlit
-Automate pipeline execution
-Extend analysis to time-series forecasting
+- Add predictive modeling for readmission risk
+- Deploy real-time scoring via Streamlit
+- Automate pipeline execution
+- Extend analysis to time-series forecasting
+
+  
 🛠️ Tech Stack
 Python (Pandas, NumPy)
 PostgreSQL
 Power BI
 Matplotlib / Seaborn
 Conda
+
 📌 Final Note
 
 This project demonstrates a production-style analytics pipeline, integrating data engineering, SQL, and business intelligence to deliver actionable healthcare insights.
