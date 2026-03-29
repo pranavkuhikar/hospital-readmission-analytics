@@ -89,37 +89,38 @@ powerbi/Hospital_Visualisation.pbix
 
 Connect to PostgreSQL or CSV and refresh.
 
-Data Engineering (Python / Pandas)
-Standardized missing values ("?" → NaN)
-Removed low-signal columns (e.g., weight, payer_code)
-Converted age buckets into numerical midpoints
-Created derived features:
-severity_index
-readmit_high_risk
-total_visits
+Data Engineering (Python / Pandas):
+- Standardized missing values ("?" → NaN)
+- Removed low-signal columns (e.g., weight, payer_code)
+- Converted age buckets into numerical midpoints
+- Created derived features:
+- severity_index
+- readmit_high_risk
+- total_visits
 
 
 🗄️ Database (PostgreSQL)
-Designed structured schema for admissions data
-Centralized fragmented clinical records into a single source of truth
-Performed analytical queries using:
-aggregations
-joins
-segmentation
-Advanced SQL
-Window Functions:
-RANK()
-PARTITION BY
-cumulative metrics
+- Designed structured schema for admissions data
+- Centralized fragmented clinical records into a single source of truth
+- Performed analytical queries using:
+
+1) Aggregations
+2) Joins
+3) Segmentation
+4) RANK()
+5) PARTITION BY
+6) Cumulative metrics
 
 📊 Business Intelligence (Power BI)
 
 Power BI was used to build an Executive Command Center Dashboard that enables:
 
-Real-time exploration of patient risk
-Root-cause analysis of clinical severity
-Resource utilization tracking
-Interactive filtering across demographics
+- Real-time exploration of patient risk
+- Root-cause analysis of clinical severity
+- Resource utilization tracking
+- Interactive filtering across demographics
+
+
 📊 Dashboard Preview
 
 ## 📊 Dashboard Preview
@@ -127,10 +128,12 @@ Interactive filtering across demographics
 
 The dashboard provides a centralized view of:
 
-Total admissions and severity index
-Demographic segmentation of patient risk
-Decomposition of severity drivers
-Age-based risk distribution
+- Total admissions and severity index
+- Demographic segmentation of patient risk
+- Decomposition of severity drivers
+- Age-based risk distribution
+
+  
 🔍 Key Visual Insights
 
 Key findings from the analysis:
@@ -139,10 +142,10 @@ Key findings from the analysis:
 
 ![Insights](./assets/Insights.png)
 
-Resource Scaling: Strong linear relationship between diagnostic complexity and treatment intensity
-Risk Hotspot: Patients aged 70–80 represent the highest-risk segment
-Clinical Pattern: High-risk patients cluster around high lab usage and chronic care patterns
-Operational Insight: Emergency admissions significantly correlate with readmission risk
+- Resource Scaling: Strong linear relationship between diagnostic complexity and treatment intensity
+- Risk Hotspot: Patients aged 70–80 represent the highest-risk segment
+- Clinical Pattern: High-risk patients cluster around high lab usage and chronic care patterns
+- Operational Insight: Emergency admissions significantly correlate with readmission risk
 
 
 🧩 Data Model (Power BI)
@@ -151,28 +154,28 @@ Operational Insight: Emergency admissions significantly correlate with readmissi
 
 The data model follows a Star Schema architecture:
 
-dim_patients → Demographic dimension table
-admissions_master → Clinical fact table
+- dim_patients → Demographic dimension table
+- admissions_master → Clinical fact table
 
 This design enables:
 
-Efficient filtering across visuals
-Scalable analytical performance
-Alignment with industry BI standards
+- Efficient filtering across visuals
+- Scalable analytical performance
+- Alignment with industry BI standards
 
 ⚠️ Challenges & Solutions
 
-Challenge: Inconsistent healthcare data
-Solution: Standardized missing values and cleaned dataset
+- Challenge: Inconsistent healthcare data
+  Solution: Standardized missing values and cleaned dataset
 
-Challenge: Environment setup issues
-Solution: Recreated reproducible Conda environment
+- Challenge: Environment setup issues
+  Solution: Recreated reproducible Conda environment
 
-Challenge: Data fragmentation
-Solution: Built centralized PostgreSQL schema
+- Challenge: Data fragmentation
+  Solution: Built centralized PostgreSQL schema
 
-Challenge: Business ambiguity
-Solution: Defined stakeholder-driven analytical questions
+- Challenge: Business ambiguity
+  Solution: Defined stakeholder-driven analytical questions
 
 🚀 Future Scope
 - Add predictive modeling for readmission risk
