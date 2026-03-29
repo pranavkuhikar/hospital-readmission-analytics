@@ -182,11 +182,11 @@ Solution: Defined stakeholder-driven analytical questions
 
   
 🛠️ Tech Stack
-Python (Pandas, NumPy)
-PostgreSQL
-Power BI
-Matplotlib / Seaborn
-Conda
+- Python (Pandas, NumPy)
+- PostgreSQL
+- Power BI
+- Matplotlib / Seaborn
+- Conda
 
 📌 Final Note
 
