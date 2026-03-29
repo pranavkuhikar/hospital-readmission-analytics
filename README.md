@@ -116,7 +116,7 @@ Interactive filtering across demographics
 📊 Dashboard Preview
 
 ## 📊 Dashboard Preview
-![Dashboard](assets/dashboard.png)
+![Dashboard](./assets/dashboard.png)
 
 The dashboard provides a centralized view of:
 
@@ -129,7 +129,8 @@ Age-based risk distribution
 Key findings from the analysis:
 
 ## 🔍 Key Visual Insights
-![Insights](assets/insights.png)
+
+![Insights](./assets/insights.png)
 
 Resource Scaling: Strong linear relationship between diagnostic complexity and treatment intensity
 Risk Hotspot: Patients aged 70–80 represent the highest-risk segment
@@ -139,7 +140,7 @@ Operational Insight: Emergency admissions significantly correlate with readmissi
 
 🧩 Data Model (Power BI)
 ## 🧩 Data Model
-![Model](assets/model.png)
+![Model](./assets/model.png)
 
 The data model follows a Star Schema architecture:
 
