@@ -5,6 +5,8 @@
 
 This project is an end-to-end healthcare analytics pipeline designed to identify the drivers of patient readmission risk and hospital resource utilization.
 
+**Designed a pipeline that transforms raw hospital data into executive-level decision insights.**
+
 Using over 95,000 inpatient records, the analysis focuses on how diagnostic complexity impacts treatment intensity and highlights high-risk patient segments contributing to 30-day readmissions.
 
 The goal is to move beyond static reporting and build a reproducible analytics system that mirrors real-world data workflows.
