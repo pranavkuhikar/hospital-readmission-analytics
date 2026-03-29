@@ -45,26 +45,26 @@ Operational inefficiencies in treatment patterns
 Raw Data → Data Cleaning → Feature Engineering → Validation → PostgreSQL → Power BI Dashboard
 
 ⚙️ How to Run This Project
-## 1. Clone Repository
+### 1. Clone Repository
 
 git clone <https://github.com/pranavkuhikar/hospital-readmission-analytics>
 cd hospital-readmission-analytics
 
-## 2. Setup Environment
+### 2. Setup Environment
 
 conda env create -f tf_10.yml
 conda activate environment
 
-## 3. Run Data Pipeline
+### 3. Run Data Pipeline
 
 python src/run_pipeline.py
 
-## 4. Output Generated
+### 4. Output Generated
 
 data/processed/clean_data.csv
 data/processed/featured_data.csv
 
-## 5. Load into PostgreSQL
+### 5. Load into PostgreSQL
 
 CREATE DATABASE hospital_analysis;
 \c hospital_analysis;
@@ -82,7 +82,7 @@ FROM 'path_to_featured_data.csv'
 DELIMITER ','
 CSV HEADER;
 
-## 6. Power BI Dashboard
+### 6. Power BI Dashboard
 
 Open:
 powerbi/Hospital_Visualisation.pbix
